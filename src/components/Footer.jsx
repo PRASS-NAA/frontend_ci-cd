@@ -17,7 +17,7 @@ export default function Footer() {
                 <a href="#">Contact Us</a>
               </li>
               <li>
-                <a href="#">Knowledge Base</a>
+                <a href="#">Knowledge</a>
               </li>
               <li>
                 <a href="#">Tutorials</a>
