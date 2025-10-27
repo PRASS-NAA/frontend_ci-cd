@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo "Logging in and pushing image from Jenkins..."
                 // Use the 'Username with password' credential to log in and push
-                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
                     
                     // Log in on the Jenkins machine
                     sh "echo ${PASS} | docker login -u ${USER} --password-stdin"
